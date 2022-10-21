@@ -29,11 +29,9 @@ const Header = () => {
               <span className="px-3 text-center cursor-pointer  ">Home</span>
             </Link>
             {/*  eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/about">
-              <span className="px-3 text-center cursor-pointer pt-3 ">
-                About
-              </span>
-            </a>
+            <Link href="/about">
+              <span className="px-3 text-center cursor-pointer  ">About</span>
+            </Link>
 
             <Menu as="div" className={dr()}>
               <div>
@@ -58,9 +56,9 @@ const Header = () => {
                   <div className="px-1 py-4 flex flex-col gap-5  ">
                     {category.map((item) => (
                       <Menu.Item key={item.slug}>
-                        <a key={item.slug} href={`/category/${item.slug}`}>
+                        <Link key={item.slug} href={`/category/${item.slug}`}>
                           <span className="px-2 py-3">{item.name}</span>
-                        </a>
+                        </Link>
                       </Menu.Item>
                     ))}
                   </div>
@@ -68,16 +66,14 @@ const Header = () => {
               </Transition>
             </Menu>
 
-            <a href="/contact">
-              <span className="px-3 text-center cursor-pointer pt-3 ">
-                Contact
-              </span>
-            </a>
-            <a href="/templates">
-              <span className="px-3 text-center cursor-pointer pt-3 ">
+            <Link href="/contact">
+              <span className="px-3 text-center cursor-pointer  ">Contact</span>
+            </Link>
+            <Link href="/templates">
+              <span className="px-3 text-center cursor-pointer  ">
                 Templates
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -109,13 +105,13 @@ const Header = () => {
               <div className="flex-col flex border-b border-blue-400 py-5 gap-3">
                 {category.map((item) => {
                   return (
-                    <a key={item.slug} href={`/category/${item.slug}`}>
+                    <Link key={item.slug} href={`/category/${item.slug}`}>
                       <span className="px-1 capitalize py-1">{item.name}</span>
-                    </a>
+                    </Link>
                   );
                 })}
               </div>
-              <div className=" items-center flex flex-col">
+              <div className=" items-center  flex flex-col">
                 <Link className="py-3 px-3" href="/">
                   <span className="py-1 cursor-pointer ">Home</span>
                 </Link>
