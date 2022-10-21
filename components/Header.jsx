@@ -19,7 +19,7 @@ const Header = () => {
         <div className="md:float-left ">
           <Link href="/">
             <span className="cursor-pointer font-bold lg:text-4xl text-2xl text-white">
-              Elidotco
+              EliCode
             </span>
           </Link>
         </div>

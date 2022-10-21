@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="flex justify-center lg:justify-between items-center flex-col text-white lg:flex-row py-5 lg:px-14 px-4">
             <Link href="/">
               <span className=" text-white text-3xl font-semibold">
-                Elidotco
+                EliCode
               </span>
             </Link>
 
