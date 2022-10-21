@@ -6,7 +6,7 @@ import { PostWidget, Card, Category } from "../components";
 import { getPosts } from "../services";
 export default function Home({ posts }) {
   return (
-    <div className="container px-4  lg:px-10 mb-8 ">
+    <div className="container px-4 mx-auto lg:px-10 mb-8 ">
       <FeaturedPosts />
       <Head>
         <title>Elidotco</title>

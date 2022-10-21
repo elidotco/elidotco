@@ -1,5 +1,5 @@
 import Head from "next/head";
-import postcss from "postcss";
+
 import React from "react";
 import {
   Author,
@@ -8,6 +8,7 @@ import {
   CommentsForm,
   PostDetail,
   PostWidget,
+  Newsletter,
 } from "../../components";
 import { AdjacentPosts } from "../../sections";
 import { getPostDetails, getPosts, getPostsDetails } from "../../services";
@@ -27,6 +28,12 @@ mb-8"
           <div className="col-span-1 lg:col-span-8">
             <PostDetail post={post} />
             <Author author={post.author} />
+            <div className="text-center">
+              <p className="text-lg font-semibold">
+                subscribe to the Newsletter for updates
+              </p>
+            </div>
+            <Newsletter />
             <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
             <CommentsForm slug={post.slug} />
             <Comments slug={post.slug} />

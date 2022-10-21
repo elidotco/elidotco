@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import { FeaturedPostCard } from "../components";
 import { getFeaturedPosts } from "../services";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const responsive = {
   superLargeDesktop: {

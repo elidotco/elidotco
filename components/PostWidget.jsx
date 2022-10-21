@@ -28,10 +28,7 @@ const PostWidget = ({ slug, categories }) => {
       </h3>
       {relatedPosts.map((post) => {
         return (
-          <div
-            key={post.title}
-            className="flex items-center mb-4 w-full border-b"
-          >
+          <div key={post.title} className="flex items-center mb-4 w-full">
             <div className="w-16 flex-none">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
