@@ -70,16 +70,16 @@ const Footer = () => {
                   About
                 </span>
               </Link>
-              <a href="/contact">
+              <Link href="/contact">
                 <span className="px-3 text-center cursor-pointer pt-3 ">
                   Contact
                 </span>
-              </a>
-              <a href="/templates">
+              </Link>
+              <Link href="/templates">
                 <span className="px-3 text-center cursor-pointer pt-3 ">
                   Templates
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
